@@ -1,0 +1,66 @@
+body {
+    background-image: url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+header nav ul li {
+    float: right;
+    display: inline;
+    text-align: right;
+    color:rgb(7, 83, 39);
+}
+
+header nav ul li {
+    margin: 0 15px;
+    font-weight:bold;
+    font-size: 20px;
+    color:rgb(216, 187, 187);
+}
+
+
+header h3 {
+    color: rgb(221, 230, 88);
+    text-align: right;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: rgb(7, 83, 39);
+    text-align: left;
+    font-size: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    color:rgb(126, 126, 201);
+    text-align: left;
+}
+
+
+p1 {
+    color:rgb(223, 223, 238)
+}
+
+div {
+    background-color: yellow;
+    padding: 20px;
+    display: none;
+  }
+    
+  span:hover + div {
+    display: block;
+  }
+
+  #AboutRoughStock {
+      margin-bottom: 40px;
+      text-align: bottom;
+      
+  }
+
+  
+
+
