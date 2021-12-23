@@ -1,24 +1,42 @@
-var express = require('express');
-var bodyparser = require('body-parse');
-var app = express();
-app.set('view engine', 'ejs');
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({ extended: false }));
+const path = require('path');
+const express = require('express');
+const session = require('express-session');
+const exphbs = require('express-handlebars');
+const routes = require('./controllers');
+const helpers = require('./utils/helpers');
 
-app.get('/signup',function(req,res){
- res.write('<html>');
-res.write('<form action="http://localhost:3000/signup_submit" method="POST">');
-res.write('<input type="text" name="full_name" placeholder="Enter Full Name"> <br>'); 
-res.write('<input type="text" name="home_state" placeholder="Enter Home State"> <br>'); 
-res.write('<input type="event-type" name="event" placeholder="Enter Event"> <br>'); 
-res.write('<button type="submit">Create New </button><br>');
-res.write('<a href=http://localhost:3000/signin><button type="button">Submit</button></a>');
-res.write('</form>');
-res.write('</html>');
+const sequelize = require('./config/connection');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
+const app = express();
+const PORT = process.env.PORT || 3001;
+
+// Set up Handlebars.js engine with custom helpers
+const hbs = exphbs.create({ helpers });
+
+const sess = {
+  secret: 'Super secret secret',
+  cookie: {},
+  resave: false,
+  saveUninitialized: true,
+  store: new SequelizeStore({
+    db: sequelize
+  })
+};
+
+app.use(session(sess));
+
+// Inform Express.js on which template engine to use
+app.engine('handlebars', hbs.engine);
+app.set('view engine', 'handlebars');
+
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(express.static(path.join(__dirname, 'public')));
+
+app.use(routes);
+
+sequelize.sync({ force: false }).then(() => {
+  app.listen(PORT, () => console.log('Now listening'));
 });
 
-app.post('signup_submit',function(req,res){
-
-console.log(req.body);
-});
-app.listen(3000);
