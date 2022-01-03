@@ -1,3 +1,5 @@
+
+
 body {
     background-image: url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
     background-repeat: no-repeat;
@@ -5,20 +7,52 @@ body {
     background-size: cover;
 }
 
+#signUp {
+
+}
+
+input[type=text] {
+    width: 95%;
+    padding: 5px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: gold;
+
+}
+
+form  {
+    width: 15%;
+    background-color: ghostwhite;
+    padding: 2%;
+    margin: 10px 0;
+    float: right;
+    position: fixed;
+    bottom: 0;
+}
+
+h4 {
+    color: white;
+}
+
+
 
 header nav ul li {
     float: right;
     display: inline;
     text-align: right;
-    color:rgb(7, 83, 39);
-}
-
-header nav ul li {
+    color:rgb(6, 247, 102);
     margin: 0 15px;
     font-weight:bold;
     font-size: 20px;
-    color:rgb(216, 187, 187);
+    
 }
+
+
 
 
 header h3 {
@@ -35,10 +69,13 @@ h1 {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
-    color:rgb(126, 126, 201);
-    text-align: left;
+ h2 {
+    color:rgb(240, 240, 248);
+    text-align: justify;
+    position: static;
 }
+
+
 
 
 p1 {
@@ -54,6 +91,8 @@ div {
   span:hover + div {
     display: block;
   }
+
+
 
   
 
