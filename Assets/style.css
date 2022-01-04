@@ -1,0 +1,102 @@
+
+
+body {
+    background-image: url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+
+
+input[type=text] {
+    width: 95%;
+    padding: 2px;
+    margin: 1px 0;
+    box-sizing: border-box;
+    border: 1px solid #555;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: gold;
+
+}
+
+.about h2 {
+    color: pink;
+}
+
+h4 {
+    color: rgb(248, 4, 4);
+   text-align: center;
+    flex-wrap: wrap;
+}
+
+form  {
+    width: 15%;
+    background-color: rgb(201, 34, 176);
+    padding: 2%;
+    margin: 0 auto;
+    position: relative;
+    bottom: 0;
+}
+
+
+
+
+
+
+
+header nav ul li {
+    float: right;
+    display: inline;
+    text-align: right;
+    color:rgb(6, 247, 102);
+    margin: 0 15px;
+    font-weight:bold;
+    font-size: 20px;
+    
+}
+
+
+
+
+header h3 {
+    color: rgb(221, 230, 88);
+    text-align: right;
+    font-size: 25px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: rgb(7, 83, 39);
+    text-align: left;
+    font-size: 65px;
+    font-family: fantasy;
+}
+
+ h2 {
+    color:rgb(240, 240, 248);
+    text-align: justify;
+    position: static;
+}
+
+
+
+
+p1 {
+    color:rgb(223, 223, 238)
+}
+
+p2 {
+    color: rgb(223, 223, 238);
+}
+
+
+
+
+
+  
+
+
