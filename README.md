@@ -1,5 +1,4 @@
 # Rough Stock Rodeo
-
 ## Project 2 Group 7
 
 - Elijah Kanellakis
