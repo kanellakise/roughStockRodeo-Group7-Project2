@@ -8,7 +8,7 @@ const postdata = [
     },
     {
         name: 'David',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 8
     },
     {
@@ -18,7 +18,7 @@ const postdata = [
     },
     {
         name: 'Angus',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 4
     },
     {
@@ -43,7 +43,7 @@ const postdata = [
     },
     {
         name: 'Alyssa',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 9
     },
     {
@@ -63,7 +63,7 @@ const postdata = [
     },
     {
         name: 'Michael',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 8
     },
     {
@@ -78,7 +78,7 @@ const postdata = [
     },
     {
         name:'Walt',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 7
     },
     {
@@ -88,7 +88,7 @@ const postdata = [
     },
     {
         name: 'Rick',
-        event: 'Saddlebronc',
+        event: 'SaddleBronc',
         user_id: 4
     },
     {
