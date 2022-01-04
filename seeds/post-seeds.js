@@ -8,7 +8,11 @@ const postdata = [
     },
     {
         name: 'David',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 8
     },
     {
@@ -18,7 +22,11 @@ const postdata = [
     },
     {
         name: 'Angus',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 4
     },
     {
@@ -43,7 +51,11 @@ const postdata = [
     },
     {
         name: 'Alyssa',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 9
     },
     {
@@ -63,7 +75,11 @@ const postdata = [
     },
     {
         name: 'Michael',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 8
     },
     {
@@ -78,7 +94,11 @@ const postdata = [
     },
     {
         name:'Walt',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 7
     },
     {
@@ -88,7 +108,11 @@ const postdata = [
     },
     {
         name: 'Rick',
+<<<<<<< Updated upstream
         event: 'Saddlebronc',
+=======
+        event: 'SaddleBronc',
+>>>>>>> Stashed changes
         user_id: 4
     },
     {
