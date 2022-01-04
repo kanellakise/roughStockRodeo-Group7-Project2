@@ -4,4 +4,4 @@ app.use("/", require("./homeroutes"));
 app.use("/events",require("./eventsignup"))
 
 
-modules.exports = app;
+module.exports = app;
