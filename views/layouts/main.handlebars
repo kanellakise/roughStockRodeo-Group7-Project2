@@ -19,7 +19,17 @@
     <header>
         <h1><em><strong>Rough Stock Rodeo</strong></em></h1>
         <h3><strong>Where it pays to play Rough!</strong></h3>
+        <nav>
+            {{#if loggedIn}}
+            <a href="/dashboard">Dashboard</a>
+            <button id="logout" class="">Logout</button>
+            {{else}}
+            <a href="/login">Login</a>
+            {{/if}}
+        </nav>
     </header>
+
+    <main>
 
     <section id="About ">
         <h2><strong>About Rough Stock</strong></h2>
@@ -34,28 +44,9 @@
         <p2>Please check back for event updates in your area</p2>
     </section>
 
-    <br>
-    <br>
+    {{{ body }}}
 
-    <section id="sign-up">
-        <h4>Sign up below</h4>
-        <form action="/action_page.php">
-            <label for="user-name">Username:</label><br>
-            <input type="text" id="user-name" name="user-name"><br>
-            <label for="email">Email:</label><br>
-            <input type="text" id="email" name="email"><br><br>
-            <label for="password">Password:</label><br>
-            <input type="text" id="password" name="password"><br><br>
-            <label for="event">Choose event: </label><br>
-            <input list="event" name="event">
-            <datalist id="event">
-                <option value="Bareback">
-                <option value="SaddleBronc">
-                <option value="Bullriding">
-            </datalist><br>
-            <input type="submit" value="Submit">
-        </form>
-    </section>
+</main>
 
 </body>
 
