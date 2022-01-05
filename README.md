@@ -13,13 +13,22 @@ Rodeo Registration and Administration Tool
 ## Features
 
 ```
-Placeholder
+Sign Up
+Login
+Logout
+Add contestant to the roster
+Edit Contestant
+Delete Contestant
+View All Contestants
 ```
 
 ## Future Features
 
 ```
-Placeholder
+Delete an Account
+Sort by event
+Note on a contestant
+Fundraiser features (broken cowboy fund)
 ```
 
 ## Technology Used
@@ -42,11 +51,13 @@ https://handlebarsjs.com/
 - Bulma
 https://bulma.io/
 
-
+- mysql
 
 ### Repository Link
 
-https://github.com/kanellakise/roughStockRodeo-Group7-Project2
+https://tinyurl.com/roughstockrodeo
+
+- https://github.com/kanellakise/roughStockRodeo-Group7-Project2
 
 ### Screenshot
 
