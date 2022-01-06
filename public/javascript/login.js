@@ -42,7 +42,7 @@ async function signupFormHandler(event) {
         });
 
         if (response.ok) {
-            document.location.replace('/dashboard');
+            document.location.replace('/profile');
             //replaced 'dashboard'
         } else {
             alert(response.statusText);

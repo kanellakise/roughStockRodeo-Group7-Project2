@@ -54,9 +54,12 @@ router.get('/profile', withAuth, async (req, res) => {
 
     const user = userData.get({ plain: true });
 
-    res.render('profile', {
+    res.render('dashboard', {
       ...user,
-      logged_in: true
+      logged_in: true,
+      user_id:req.session.user_id,
+      username:req.session.user_name,
+      email:req.session.user_email
     });
   } catch (err) {
     res.status(500).json(err);
