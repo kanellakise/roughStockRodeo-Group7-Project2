@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/44ffeca87b.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Rough Stock Rodeo</title>
+  </head>
+  <body>
+    <!--Add to main handlebars for the BG image-->
+    <style>
+      body {
+        background-image: url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+      }
+    </style>
+    <header class="column is-full">
+      <h1 class="title is-1 is-left has-text-primary">Rough Stock Rodeo</h1>
+      <h2 class="title is-2 has-text-danger has-text-right">
+        <strong>Where it pays to play Rough!</strong>
+      </h2>
+    </header>
+    <section class="column is-full" id="About">
+      <h2 class="title is-2 has-text-centered has-text-link">
+        <strong>About Rough Stock</strong>
+      </h2>
+      <p1 class="text has-text-danger-light"
+        >Rough stock is a term that describes 3 events in Rodeo- Bullriding,
+        Bareback <br />
+        riding and Saddle Bronc riding. Rough stock is considered by many to be
+        the most<br />
+        physically demanding events in rodeo.
+      </p1>
+    </section>
+    <section class="is-column" id="coming to your City">
+      <h2 class="title is-2 has-text-link">
+        <strong>Coming to your city</strong>
+      </h2>
+      <p2 class="text has-text-danger-light"
+        >Please check back for event updates in your area</p2
+      >
+    </section>
+    <!-- Sign up/log in section-->
+    <section>
+      <div class="box column is-one-quarter">
+        <div class="field has-text-centered">
+          <h4 class="title has-text-danger">Sign up below</h4>
+        </div>
+        <div>
+          <p class="control has-icons-left">
+            <input class="input" type="username" placeholder="Username" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-user"></i>
+            </span>
+          </p>
+        </div>
+        <div>
+          <p class="control has-icons-left">
+            <input class="input" type="email" placeholder="Email" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control has-icons-left">
+            <input class="input" type="password" placeholder="Password" />
+            <span class="icon is-small is-left">
+              <i class="fas fa-lock"></i>
+            </span>
+          </p>
+        </div>
+        <div class="field">
+          <p class="control">
+            <button class="button is-success">SUBMIT</button>
+          </p>
+        </div>
+      </div>
+      <form class="login-form box column is-one-quarter">
+        <div class="field">
+          <label class="label" for="email-login">Email:</label>
+          <div class="control">
+            <input
+              type="text"
+              id="email-login"
+              placeholder="roughstock@rodeo.com"
+            />
+            <span class="icon is-small is-left">
+              <i class="fas fa-envelope"></i>
+            </span>
+          </div>
+        </div>
+        <div class="field">
+          <label class="label" for="password-login">Password:</label>
+          <input
+            type="password"
+            id="password-login"
+            placeholder="Garfield123"
+          />
+          <span class="icon is-small is-left">
+            <i class="fas fa-lock"></i>
+          </span>
+        </div>
+        <div class="field">
+          <div class="control">
+            <button class="button is-success" type="submit">Login</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+  <footer></footer>
+</html>
