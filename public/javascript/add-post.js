@@ -1,8 +1,10 @@
 async function newFormHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="post-name"]').value;
-    const event = document.querySelector('input[name="post-event"]').value;
+    const name = document.querySelector('#post-nameGetter').value;
+    const event = document.querySelector('#post-eventGetter').value;
+    alert(name);
+    console.log(name);
 //line 5 changed event from post_url
     const response = await fetch(`/api/posts`, {
         method: 'POST',
