@@ -3,21 +3,20 @@
 
     <form class="new-post-form box">
         <div class="field">
-           {{!-- <input class="label is-half-width" for="post-name">Name</input>--}}
-           {{!-- <input class="label is-primary is-half-width" type="text" id="post-name" name="post-name" /> --}}
-           <input type="text" id="post-nameGetter" name="post-name" placeholder="First Name" />
-           {{!-- <label class="label" for="post-name">Name</label>
+            {{!-- <input class="label is-half-width" for="post-name">Name</input>--}}
+            {{!-- <input class="label is-primary is-half-width" type="text" id="post-name" name="post-name" /> --}}
+            <input type="text" id="post-nameGetter" name="post-name" placeholder="First Name" />
+            {{!-- <label class="label" for="post-name">Name</label>
             <input class="input is-primary" type="text" id="post-nameGetter" name="post-name" />--}}
         </div>
         <div class="field">
             <label class="label" for="post-event">Event</label>
             <input class="input is-primary" type="text" id="post-eventGetter" name="post-event" />
         </div>
-        <button type="submit" class="btn button is-primary">Create</button>
+        <button href="/api/posts/" type="submit" class="btn button is-primary">Create</button>
     </form>
 </section>
 
-{{!-- {{#if posts.length}} --}}
 <section style="background-color:aqua" class="">
     <h2>Your Posts</h2>
     <ol>
@@ -26,12 +25,11 @@
         <li>Event: {{post.event}}</li>
         <li>
             <a href="/dashboard/edit/{{post.id}}" class="edit-event button">Edit</a>
-            <a href="/api/posts/{{post.id}}" class="delete-post-btn button">Delete</a>
+            <a href="/api/posts/delete/{{post.id}}" class="delete-post-btn button">Delete</a>
         </li>
         {{/each}}
     </ol>
 </section>
-{{!-- {{/if}} --}}
 
 <script src="/javascript/add-post.js"></script>
 <script src="/javascript/logout.js"></script>

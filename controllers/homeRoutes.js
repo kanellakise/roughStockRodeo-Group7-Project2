@@ -8,12 +8,13 @@ router.get('/', async (req, res) => {
     // Pass serialized data and session flag into template
     res.render('homepage')
 });
+
 router.get('/signup', async (req, res) => {
   
-
   // Pass serialized data and session flag into template
   res.render('signup')
 });
+
 router.get('/login', async (req, res) => {
   
 
@@ -26,8 +27,12 @@ router.get('/post/:id', async (req, res) => {
     const postData = await Post.findByPk(req.params.id, {
       include: [
         {
-          model: User,
-          attributes: ['name'],
+          model: Post,
+          attributes: [
+            'name',
+            'event',
+            'user_id'
+          ]
         },
       ],
     });
