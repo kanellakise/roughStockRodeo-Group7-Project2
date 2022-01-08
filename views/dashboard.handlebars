@@ -1,32 +1,27 @@
 <section class="">
-    <h2>Create New Post</h2>
+    <h2><strong>Create New Post</strong></h2>
 
     <form class="new-post-form box">
         <div class="field">
-           {{!-- <input class="label is-half-width" for="post-name">Name</input>--}}
-           {{!-- <input class="label is-primary is-half-width" type="text" id="post-name" name="post-name" /> --}}
-           <input type="text" id="post-nameGetter" name="post-name" placeholder="First Name" />
-           {{!-- <label class="label" for="post-name">Name</label>
-            <input class="input is-primary" type="text" id="post-nameGetter" name="post-name" />--}}
+            <input type="text" id="post-nameGetter" name="post-name" placeholder="First Name" />
         </div>
         <div class="field">
-            <label class="label" for="post-event">Event</label>
-            <input class="input is-primary" type="text" id="post-eventGetter" name="post-event" />
+            <input type="text" id="post-eventGetter" name="post-event" placeholder="Event" />
         </div>
-        <button type="submit" class="btn button is-primary">Create</button>
+        <button type="submit" class="btn button is-warning is-small is-rounded">Create</button>
     </form>
 </section>
 
 {{!-- {{#if posts.length}} --}}
-<section style="background-color:aqua" class="">
-    <h2>Your Posts</h2>
+<section style="background-color:rgb(9, 240, 39)" class="text has-text-centered">
+    <h2><strong>Your Posts</strong></h2>
     <ol>
         {{#each posts as |post|}}
-        <li>Name: {{post.name}}</li>
-        <li>Event: {{post.event}}</li>
+        <li class="text is-size-5 has-text-danger-dark">Name: {{post.name}}</li>
+        <li class="text has-text-warning-dark">Event: {{post.event}}</li>
         <li>
-            <a href="/dashboard/edit/{{post.id}}" class="edit-event button">Edit</a>
-            <a href="/api/posts/{{post.id}}" class="delete-post-btn button">Delete</a>
+            <a href="/dashboard/edit/{{post.id}}" class="edit-event button is-dark is-rounded">Edit</a>
+            <a href="/api/posts/{{post.id}}" class="delete-post-btn button is-danger is-light is-rounded">Delete</a>
         </li>
         {{/each}}
     </ol>
