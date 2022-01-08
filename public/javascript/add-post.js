@@ -1,15 +1,14 @@
 async function newFormHandler(event) {
     event.preventDefault();
 
-    const title = document.querySelector('input[name="post-name"]').value;
-    const event = document.querySelector('input[name="post-event"]').value;
+    const name = document.querySelector('input[name="post-name"]').value.trim();
+    const event = document.querySelector('input[name="post-event"]').value.trim();
 //line 5 changed event from post_url
-    const response = await fetch(`/api/posts`, {
+    const response = await fetch(`/api/posts/`, {
         method: 'POST',
         body: JSON.stringify({
-            title,
+            name,
             event
-            //changed line 10 from name to title- original was deprecated
         }),
         headers: {
             'Content-Type': 'application/json'
