@@ -14,18 +14,19 @@
     </form>
 </section>
 
-{{#if posts.length}}
-<section>
+{{!-- {{#if posts.length}} --}}
+<section style="background-color:aqua" class="">
     <h2>Your Posts</h2>
     <ol>
         {{#each posts as |post|}}
+        <li>Name: {{post.name}}</li>
+        <li>Event: {{post.event}}</li>
         <li>
-            {{> post}}
             <a href="/dashboard/edit/{{post.id}}" class="edit-event">Edit post</a>
         </li>
         {{/each}}
     </ol>
 </section>
-{{/if}}
+{{!-- {{/if}} --}}
 
 <script src="/javascript/add-post.js"></script>

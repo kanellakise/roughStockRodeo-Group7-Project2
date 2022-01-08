@@ -2,6 +2,7 @@ async function editFormHandler(event) {
     event.preventDefault();
 
     const name = document.querySelector('input[name="post-name"]').value.trim();
+    console.log(name)
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
