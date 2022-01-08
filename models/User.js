@@ -10,7 +10,7 @@ class User extends Model {
   }
 };
 
-// User model fields/columns
+// create User model fields/columns
 User.init(
   {
     id: {
@@ -41,6 +41,7 @@ User.init(
   },
   {
     hooks: {
+      //set up beforeCreate lifecycle "hook" functionality
       async beforeCreate(newUserData) {
         newUserData.password = await bcrypt.hash(newUserData.password, 10);
         return newUserData;
