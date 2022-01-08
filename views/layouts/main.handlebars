@@ -1,68 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
-        <script src="https://kit.fontawesome.com/44ffeca87b.js" crossorigin="anonymous"></script>
-        <title>Rough Stock Rodeo</title>
-    </head>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css" />
+    <script src="https://kit.fontawesome.com/44ffeca87b.js" crossorigin="anonymous"></script>
+    <title>Rough Stock Rodeo</title>
+</head>
 
-    <body>
-        <!--Add to main handlebars for the BG image-->
-        <style>
-            body {
-                background-image:
-                    url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-size: cover;
-            }
-        </style>
+<body>
+    <!--Add to main handlebars for the BG image-->
+    <style>
+        .hero {
+            background-image:
+                url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+    </style>
 
-        <header class="column is-full">
-            <h1 class="title is-1 is-left has-text-primary">Rough Stock Rodeo</h1>
-            <h2 class="title is-2 has-text-danger has-text-right">
-                <strong>Where it pays to play Rough!</strong>
+    <header class="">
+    </header>
+    <main>
+
+        <nav class="navbar">
+            <div class="container">
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        {{#if loggedIn}}
+                        <a class="navbar-item" href="/dashboard">Dashboard</a>
+                        <button id="logout" class="navbar-item">Logout</button>
+                        {{else}}
+                        <a class="navbar-item" href="/login">Login</a>
+                        <a class="navbar-item" href="/signup">Sign Up</a>
+                        {{/if}}
+                    </div>
+
+                    <div class="navbar-end">
+                        <div class="navbar-item">
+                            <div class="buttons">
+                                <a class="button is-dark">Profile</a>
+                                <a class="button is-link">Settings</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="hero is-link is-fullheight-with-navbar"
+            href="https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg">
+            <div class="hero-body">
+                <h1 class="title is-1 is-left has-text-primary">Rough Stock Rodeo</h1>
+                <h2 class="title is-2 has-text-danger">
+                    <strong>Where it pays to play Rough!</strong>
+                </h2>
+            </div>
+        </section>
+
+        <section class="column is-full block" id="About">
+            <h2 class="title columns is-2 has-text-centered has-text-link">
+                <strong>About Rough Stock</strong>
             </h2>
-            <nav>
-                {{#if loggedIn}}
-                <a href="/dashboard">Dashboard</a>
-                <button id="logout" class="">Logout</button>
-                {{else}}
-                <a href="/login">Login</a>
-                <a href="/signup">Sign Up</a>
-                {{/if}}
-            </nav>
-        </header>
-        <main>
-            <section class="column is-full" id="About">
-                <h2 class="title is-2 has-text-centered has-text-link">
-                    <strong>About Rough Stock</strong>
-                </h2>
-                <p1 class="text has-text-danger-light">Rough stock is a term that
-                    describes 3 events in Rodeo- Bullriding, Bareback
-                    <br />
-                    riding and Saddle Bronc riding. Rough stock is considered by many to be
-                    the most<br />
-                    physically demanding events in rodeo.
-                </p1>
-            </section>
+            <p1 class="text columns">Rough stock is a term that
+                describes 3 events in Rodeo- Bullriding, Bareback
+                <br />
+                riding and Saddle Bronc riding. Rough stock is considered by many to be
+                the most<br />
+                physically demanding events in rodeo.
+            </p1>
+        </section>
 
-            <section class="is-column" id="coming to your City">
-                <h2 class="title is-2 has-text-link">
-                    <strong>Coming to your city</strong>
-                </h2>
-                <p2 class="text has-text-danger-light">Please check back for event updates
-                    in your area</p2>
-            </section>
+        <section class="is-column" id="coming to your City">
+            <h2 class="title is-2 has-text-link">
+                <strong>Coming to your city</strong>
+            </h2>
+            <p2 class="text ">Please check back for event updates
+                in your area</p2>
+        </section>
 
-            {{{ body }}}
+        {{{ body }}}
 
-        </main>
-    
+    </main>
+
     <footer></footer>
 
     {{#if loggedIn}}

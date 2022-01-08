@@ -1,16 +1,19 @@
-<section>
+<section class="">
     <h2>Create New Post</h2>
 
-    <form class="new-post-form">
-        <div>
-            <label for="post-name">Name</label>
-            <input type="text" id="post-name" name="post-name" />
+    <form class="new-post-form box">
+        <div class="field">
+            <label class="label" for="post-name">Name</label>
+            <input class="input is-primary" type="text" id="post-name" name="post-name" />
         </div>
-        <div>
-            <label for="post-event">Event</label>
-            <input id="post-event" name="post-event" />
+        <div class="select">
+            <select for="post-event" class="is-focused">
+                <option>Bareback</option>
+                <option>SaddleBronc</option>
+                <option>Bullriding</option>
+            </select>
         </div>
-        <button type="submit" class="btn">Create</button>
+        <button type="submit" class="btn button is-primary">Create</button>
     </form>
 </section>
 
