@@ -61,6 +61,9 @@
             </div>
         </section>
 
+        {{#if loggedIn}}
+
+        {{else}}
         <section class="column is-full block" id="About">
             <h2 class="title columns is-2 has-text-centered has-text-link">
                 <strong>About Rough Stock</strong>
@@ -78,9 +81,11 @@
             <h2 class="title is-2 has-text-link">
                 <strong>Coming to your city</strong>
             </h2>
-            <p2 class="text ">Please check back for event updates
+            <p2 class="text">Please check back for event updates
                 in your area</p2>
         </section>
+        {{/if}}
+
 
         {{{ body }}}
 
