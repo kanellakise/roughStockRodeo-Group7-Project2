@@ -7,6 +7,7 @@ async function editFormHandler(event) {
     const name = document.querySelector('input[name="post-name"]').value.trim();
     console.log(name)
    
+    //getting post id from URL string
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];

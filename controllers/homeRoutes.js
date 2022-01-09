@@ -45,15 +45,16 @@ router.get('/post/:id', async (req, res) => {
         },
       ],
     });
-    
+
 // serialize the entire array 
     const post = postData.get({ plain: true });
-
+//pass data to template
     res.render('post', {
       ...post,
       logged_in: req.session.logged_in
     });
   } catch (err) {
+    //return error 500
     res.status(500).json(err);
   }
 });
@@ -70,10 +71,10 @@ router.get('/profile', withAuth, async (req, res) => {
 
 //serialize the entire array
     const user = userData.get({ plain: true });
-
+//pass userdata to template
     res.render('profile', {
 
-      //check if user is logged in
+      
       ...user,
       logged_in: true
     });
@@ -82,6 +83,7 @@ router.get('/profile', withAuth, async (req, res) => {
   }
 });
 
+//check if user is logged in
 router.get('/login', (req, res) => {
 
   // If the user is already logged in, redirect the request to another route
