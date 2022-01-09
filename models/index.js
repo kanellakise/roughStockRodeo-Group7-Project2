@@ -1,13 +1,14 @@
 const Post = require('./Post');
 const User = require('./User');
 
-// associations
+// create associations
 User.hasMany(Post, {
     foreignKey: 'user_id'
 });
 
 Post.belongsTo(User, {
     foreignKey: 'user_id',
+    //set user_id to null when deleting post
     onDelete: 'SET NULL'
 });
 

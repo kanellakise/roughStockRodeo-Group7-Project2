@@ -1,3 +1,5 @@
+<!-- edit post template -->
+
 <article>
     <a href="/dashboard"> &larr; Back to dashboard</a>
     <h2>
@@ -5,13 +7,18 @@
     </h2>
     <form class="edit-post-form">
         <div>
+            <!-- input for post-name data -->
             <input name="post-name" type="text" value="{{post.name}}" />
             <span>({{post.event}})</span>
         </div>
+
+        <!--submit button for edit post -->
         <button type="submit">Save post</button>
         <button type="button" class="delete-post-btn">Delete post</button>
     </form>
 </article>
 
+<!-- linking to static javacript for edit post and delete post, with absolute path -->
+<!-- front logic found in edit-post.js and delete-post.js -->
 <script src="/javascript/edit-post.js"></script>
 <script src="/javascript/delete-post.js"></script>

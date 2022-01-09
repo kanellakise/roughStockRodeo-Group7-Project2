@@ -1,9 +1,25 @@
+/* BODY STYLES START */
+
 body {
   background-image: url("https://multifiles.pressherald.com/uploads/sites/10/2021/07/25525314_20210723-PBR-002.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
 }
+
+p1 {
+  color: rgb(223, 223, 238);
+}
+
+p2 {
+  color: rgb(223, 223, 238);
+}
+
+/* BODY STYLES END */
+
+
+/* INPUT STYLES START */
+
 
 input[type="text"] {
   width: 95%;
@@ -22,12 +38,6 @@ input[type="text"]:focus {
   color: pink;
 }
 
-h4 {
-  color: rgb(248, 4, 4);
-  text-align: center;
-  flex-wrap: wrap;
-}
-
 form {
   width: 15%;
   background-color: rgb(201, 34, 176);
@@ -37,6 +47,10 @@ form {
   bottom: 0;
 }
 
+/* INPUT STYLES END */
+
+/* HEADER STYLES */
+
 header nav ul li {
   float: right;
   display: inline;
@@ -45,13 +59,6 @@ header nav ul li {
   margin: 0 15px;
   font-weight: bold;
   font-size: 20px;
-}
-
-header h3 {
-  color: rgb(221, 230, 88);
-  text-align: right;
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 h1 {
@@ -67,10 +74,17 @@ h2 {
   position: static;
 }
 
-p1 {
-  color: rgb(223, 223, 238);
+header h3 {
+  color: rgb(221, 230, 88);
+  text-align: right;
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-p2 {
-  color: rgb(223, 223, 238);
+h4 {
+  color: rgb(248, 4, 4);
+  text-align: center;
+  flex-wrap: wrap;
 }
+
+
