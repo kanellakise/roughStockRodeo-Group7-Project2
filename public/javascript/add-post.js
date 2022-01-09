@@ -12,7 +12,7 @@ async function newFormHandler(event) {
 //line 5 changed event from post_url
 
 //send POST request to /api/posts
-    const response = await fetch(`/api/posts/`, {
+    const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({
             name,
