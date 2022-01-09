@@ -31,6 +31,7 @@ router.get('/login', async (req, res) => {
   res.render('login')
 });
 
+//get post attributes route
 router.get('/post/:id', async (req, res) => {
   try {
     const postData = await Post.findByPk(req.params.id, {
@@ -59,7 +60,7 @@ router.get('/post/:id', async (req, res) => {
   }
 });
 
-// Use withAuth middleware to prevent access to route
+// Use withAuth middleware to prevent access to route for unauthorized users
 router.get('/profile', withAuth, async (req, res) => {
   try {
 
