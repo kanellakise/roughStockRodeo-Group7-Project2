@@ -1,9 +1,15 @@
+//syntactic sugar for error handling
+// async helps asynchronus code use async/await
 async function deleteFormHandler(event) {
     event.preventDefault();
 
     const id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
     ];
+
+    //async happening here
+        //making a request with delete api
+        //assigning the result of the promise to a variable
     const response = await fetch(`/api/posts/delete/${id}`, {
         method: 'DELETE'
     });
@@ -15,4 +21,5 @@ async function deleteFormHandler(event) {
     }
 }
 
+//event listener for delete submission
 document.querySelector('.delete-post-btn').addEventListener('click', deleteFormHandler);

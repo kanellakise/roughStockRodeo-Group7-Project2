@@ -12,14 +12,17 @@ router.get('/', async (req, res) => {
     // accepts an argument, an object, which includes all the data to pass to the template
     res.render('homepage')
 });
-// signup
+
+// signup route
 //serialize the object down to only the properties you need
 router.get('/signup', async (req, res) => {
   
   // Pass serialized data and session flag into template
   res.render('signup')
 });
-// login
+
+
+// login route
 //serialize the object down to only the properties you need
 router.get('/login', async (req, res) => {
   
@@ -42,6 +45,7 @@ router.get('/post/:id', async (req, res) => {
         },
       ],
     });
+    
 // serialize the entire array 
     const post = postData.get({ plain: true });
 
@@ -57,15 +61,18 @@ router.get('/post/:id', async (req, res) => {
 // Use withAuth middleware to prevent access to route
 router.get('/profile', withAuth, async (req, res) => {
   try {
+
     // Find the logged in user based on the session ID
     const userData = await User.findByPk(req.session.user_id, {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
     });
+
 //serialize the entire array
     const user = userData.get({ plain: true });
 
     res.render('profile', {
+
       //check if user is logged in
       ...user,
       logged_in: true
@@ -76,11 +83,13 @@ router.get('/profile', withAuth, async (req, res) => {
 });
 
 router.get('/login', (req, res) => {
+
   // If the user is already logged in, redirect the request to another route
   if (req.session.logged_in) {
     res.redirect('/profile');
     return;
   }
+
 // render the login page
   res.render('login');
 });
