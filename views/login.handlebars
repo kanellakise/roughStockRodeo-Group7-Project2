@@ -1,7 +1,10 @@
+<!-- login template -->
+
 <form class="login-form box column is-one-quarter">
   <div class="field">
     <label class="label" for="email-login">Email:</label>
     <div class="control">
+      <!-- email login input box with default email address -->
       <input type="text" id="email-login" placeholder="roughstock@rodeo.com" />
       <span class="icon is-small is-left">
         <i class="fas fa-envelope"></i>
@@ -10,6 +13,7 @@
   </div>
   <div class="field">
     <label class="label" for="password-login">Password:</label>
+    <!-- password input box -->
     <input type="password" id="password-login" placeholder="Garfield123" />
     <span class="icon is-small is-left">
       <i class="fas fa-lock"></i>
@@ -17,9 +21,11 @@
   </div>
   <div class="field">
     <div class="control">
+      <!-- submit button -->
       <button class="button is-success" type="submit">Login</button>
     </div>
   </div>
 </form>
 
+<!-- linking to static javacript for login, with absolute path -->
 <script src="/javascript/login.js"></script>

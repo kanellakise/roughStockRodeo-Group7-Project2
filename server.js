@@ -1,6 +1,8 @@
 const path = require('path');
 const express = require('express');
 const session = require('express-session');
+
+//set up handlebars as the app's template engine
 const exphbs = require('express-handlebars');
 
 const app = express();
@@ -23,6 +25,7 @@ app.use(session(sess));
 
 const hbs = exphbs.create();
 
+//set up handlebars as the app's template engine
 app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 

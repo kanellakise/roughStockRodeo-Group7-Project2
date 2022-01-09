@@ -1,4 +1,7 @@
+//set up the main homepage route
+
 const router = require('express').Router();
+//import necessary models
 const { Post, User } = require('../models');
 const withAuth = require('../utils/auth');
 
@@ -6,15 +9,18 @@ router.get('/', async (req, res) => {
   
 
     // Pass serialized data and session flag into template
+    // accepts an argument, an object, which includes all the data to pass to the template
     res.render('homepage')
 });
-
+// signup
+//serialize the object down to only the properties you need
 router.get('/signup', async (req, res) => {
   
   // Pass serialized data and session flag into template
   res.render('signup')
 });
-
+// login
+//serialize the object down to only the properties you need
 router.get('/login', async (req, res) => {
   
 
@@ -36,7 +42,7 @@ router.get('/post/:id', async (req, res) => {
         },
       ],
     });
-
+// serialize the entire array 
     const post = postData.get({ plain: true });
 
     res.render('post', {
@@ -56,10 +62,11 @@ router.get('/profile', withAuth, async (req, res) => {
       attributes: { exclude: ['password'] },
       include: [{ model: Post }],
     });
-
+//serialize the entire array
     const user = userData.get({ plain: true });
 
     res.render('profile', {
+      //check if user is logged in
       ...user,
       logged_in: true
     });
@@ -74,7 +81,7 @@ router.get('/login', (req, res) => {
     res.redirect('/profile');
     return;
   }
-
+// render the login page
   res.render('login');
 });
 

@@ -1,4 +1,12 @@
+<!-- HOMEPAGE TEMPLATE FILE -->
+<!--When the template is rendered and sent to the client, the expressions will be replaced by the correct data
+Handlebars.js has built-in helpers that will allow you to perform minimal logic like looping over an array.
+Note the use of {{#each}} to begin the loop and {{/each}} to define where it ends.
+it's working with an object on each iteration, so it looks for the necessary properties
+-->
 <ol class="post-list">
+    <!-- {{}} syntax converts html characters to strings -->
+   
     {{#each posts as |post|}}
     <li>
         {{> post }}
