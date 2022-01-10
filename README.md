@@ -31,6 +31,14 @@ Fundraiser features (broken cowboy fund)
 Edit Contestant
 ```
 
+## User Story
+
+```
+AS A USER I want to be able to signup, login, and post to a roster.
+I WANT a backend server and database for my website that uses the latest technologies
+SO THAT users may be able to track contestants in roughstock rodeo events
+```
+
 ## Technology Used
 
 - bcrypt
@@ -70,3 +78,5 @@ https://tinyurl.com/roughstockrodeo
 ![image](https://user-images.githubusercontent.com/50533231/148712042-e56707c4-7123-48f0-9e6b-d0603bd7cbfb.png)
 
 ### License
+
+MIT
