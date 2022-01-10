@@ -61,8 +61,7 @@ https://tinyurl.com/roughstockrodeo
 
 ### Screenshots
 
-![image](https://user-images.githubusercontent.com/90293855/148161796-e4fee4e1-81b7-422b-aa56-e2a61425f140.JPG)
-
-![image](https://user-images.githubusercontent.com/90293855/148161745-5362dc02-77fe-4c21-a2c6-d378da811018.JPG)
+![image](https://user-images.githubusercontent.com/50533231/148711476-bd9c0181-b6d8-4870-aae4-c0c96025d7f9.png)
+![image](https://user-images.githubusercontent.com/50533231/148712042-e56707c4-7123-48f0-9e6b-d0603bd7cbfb.png)
 
 ### License
