@@ -7,20 +7,20 @@
 async function loginFormHandler(event) {
     event.preventDefault();
 
-// grabbing data from from to POST
+    // grabbing data from from to POST
     const email = document.querySelector('#email-login').value.trim();
     const password = document.querySelector('#password-login').value.trim();
 
     //clientside validation 
     //control statement to confirm user has given BOTH email and password before making POST request
     if (email && password) {
-        
+
         //async happening here
         //making a request with login api
         //assigning the result of the promise to a variable
         const response = await fetch('/api/users/login', {
-          
-          //post request for user name and email
+
+            //post request for user name and email
             method: 'post',
             body: JSON.stringify({
                 email,

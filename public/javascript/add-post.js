@@ -10,8 +10,6 @@ async function newFormHandler(e) {
     const name = document.querySelector('input[name="post-name"]').value.trim();
     const event = document.querySelector('input[name="post-event"]').value.trim();
 //line 5 changed event from post_url
-alert(name);
-alert(event);
 //send POST request to /api/posts
     const response = await fetch(`/api/posts`, {
         method: 'POST',
