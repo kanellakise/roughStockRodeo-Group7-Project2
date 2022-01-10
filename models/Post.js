@@ -19,7 +19,6 @@ Post.init(
         },
         event: {
             type: DataTypes.STRING,
-            allowNull: false
         },
         user_id: {
             type: DataTypes.INTEGER,

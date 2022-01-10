@@ -3,16 +3,15 @@
 
 //syntactic sugar for error handling
 // async helps asynchronus code use async/await
-async function newFormHandler(event) {
-    event.preventDefault();
+async function newFormHandler(e) {
+    e.preventDefault();
 
     //grabbing data from form
     const name = document.querySelector('input[name="post-name"]').value.trim();
     const event = document.querySelector('input[name="post-event"]').value.trim();
 //line 5 changed event from post_url
-
 //send POST request to /api/posts
-    const response = await fetch(`/api/posts/`, {
+    const response = await fetch(`/api/posts`, {
         method: 'POST',
         body: JSON.stringify({
             name,

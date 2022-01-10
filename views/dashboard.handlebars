@@ -1,9 +1,9 @@
 
 <!-- template for input for creating a new post -->
-<section class="">
-    <h2><strong>Create New Post</strong></h2>
+<section class="column box is-one-quarter">
+    <h2 class="title is-5"><strong>Register a new contestant below!</strong></h2>
 
-    <form class="new-post-form box">
+    <form class="new-post-form">
         <div class="field">
             <input type="text" id="post-nameGetter" name="post-name" placeholder="First Name" />
         </div>
@@ -15,16 +15,14 @@
 </section>
 
 <!-- template for posts -->
-{{!-- {{#if posts.length}} --}}
-<section style="background-color:rgb(9, 240, 39)" class="text has-text-centered">
-    <h2><strong>Your Posts</strong></h2>
+<section style="background-color:rgb(9, 240, 39)" class=" has-text-centered">
+    <h2 class="title is-3"><strong>Registered Contestants</strong></h2>
     <ol>
         {{#each posts as |post|}}
         <li class="text is-size-5 has-text-danger-dark">Name: {{post.name}}</li>
         <li class="text has-text-warning-dark">Event: {{post.event}}</li>
         <li>
             <a href="/dashboard/edit/{{post.id}}" class="edit-event button is-dark is-rounded">Edit</a>
-            <a href="/api/posts/{{post.id}}" class="delete-post-btn button is-danger is-light is-rounded">Delete</a>
         </li>
         {{/each}}
     </ol>
