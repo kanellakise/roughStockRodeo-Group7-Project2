@@ -17,7 +17,6 @@ Sign Up
 Login
 Logout
 Add contestant to the roster
-Edit Contestant
 Delete Contestant
 View All Contestants
 ```
@@ -29,6 +28,7 @@ Delete an Account
 Sort by event
 Note on a contestant
 Fundraiser features (broken cowboy fund)
+Edit Contestant
 ```
 
 ## Technology Used
@@ -61,7 +61,12 @@ https://tinyurl.com/roughstockrodeo
 
 ### Screenshots
 
+#### Login Page
+
 ![image](https://user-images.githubusercontent.com/50533231/148711476-bd9c0181-b6d8-4870-aae4-c0c96025d7f9.png)
+
+#### Dashboard (after logging in)
+
 ![image](https://user-images.githubusercontent.com/50533231/148712042-e56707c4-7123-48f0-9e6b-d0603bd7cbfb.png)
 
 ### License
